@@ -88,8 +88,12 @@ body:not(.index) main {
   left: 0;
   width: 100%;
   z-index: 60;
-  background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid #e8dcc8;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img/teste.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition:
     background 0.25s ease,
@@ -99,8 +103,8 @@ body:not(.index) main {
 
 .header.fixed .logo,
 .header.fixed .nav a {
-  color: var(--marrom);
-  text-shadow: none;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header.fixed .logo img {
