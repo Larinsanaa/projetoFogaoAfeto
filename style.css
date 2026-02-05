@@ -347,10 +347,6 @@ body:not(.index) main {
   font-size: 22px;
 }
 
-.card-special {
-  border: 2px solid var(--verde);
-}
-
 .info-block {
   margin-bottom: 40px;
   padding-bottom: 30px;
