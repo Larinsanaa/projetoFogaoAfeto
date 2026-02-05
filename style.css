@@ -52,7 +52,6 @@ h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-bottom: 1px solid #e8dcc8;
   padding: 15px 0;
 }
 
@@ -68,43 +67,22 @@ h3 {
 /* Espaçamento para evitar que o header fixe sobreponha o conteúdo
    apenas em páginas que não usam a classe .index (index já lida separadamente) */
 body:not(.index) main {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
-.index .header {
-  background: transparent;
-  border-bottom: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 20;
-}
-
-/* Header fixa quando o usuário rolar além do hero */
-.header.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+/* Header fixo com fundo marrom */
+.header {
+  background: var(--marrom);
   z-index: 60;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("img/teste.png");
-  background-size: cover;
-  background-position: center 114.5%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-.header.fixed .logo,
-.header.fixed .nav a {
+.header .logo,
+.header .nav a {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.header.fixed .logo img {
+.header .logo img {
   filter: none;
 }
 
@@ -195,7 +173,7 @@ body:not(.index) main {
   align-items: center;
   justify-content: center;
   color: white;
-  min-height: 500px;
+  min-height: 700px;
   margin-top: -60px;
   width: 100%;
 }
@@ -225,6 +203,7 @@ body:not(.index) main {
   color: var(--texto);
   font-size: 16px;
   margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .section-white {
@@ -260,9 +239,9 @@ body:not(.index) main {
 .about-text p {
   font-size: 20px;
   line-height: 1.8;
-  color: var(--texto);
   margin-bottom: 15px;
   text-align: justify;
+  font-weight: 800;
 }
 
 .about-img img {
@@ -271,7 +250,7 @@ body:not(.index) main {
 }
 
 .category {
-  font-size: 20px;
+  font-size: 25px;
   margin: 40px 0 20px;
   padding-bottom: 12px;
   border-bottom: 2px solid var(--terracota);
@@ -319,7 +298,7 @@ body:not(.index) main {
 }
 
 .card h3 {
-  font-size: 16px;
+  font-size: 18px;
   margin: 15px 0 8px;
   padding: 0 15px;
 }
@@ -329,10 +308,10 @@ body:not(.index) main {
 }
 
 .card p {
-  font-size: 13px;
-  color: var(--texto);
+  font-size: 20px;
   line-height: 1.5;
   padding: 0 15px 15px;
+  font-weight: 500;
 }
 
 .price {
@@ -359,7 +338,7 @@ body:not(.index) main {
 }
 
 .info-block h2 {
-  font-size: 18px;
+  font-size:25px;
   margin-bottom: 15px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--terracota);
@@ -371,14 +350,14 @@ body:not(.index) main {
 }
 
 .info-item h3 {
-  font-size: 15px;
+  font-size: 25px;
   margin-bottom: 8px;
 }
 
 .info-item p {
-  color: var(--texto);
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.6;
+  font-weight: 600;
 }
 
 .info-item a {
@@ -423,20 +402,20 @@ body:not(.index) main {
 
 .footer p {
   font-size: 13px;
-  color: rgba(87, 20, 20, 0.9);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.5;
   margin-bottom: 10px;
 }
 
 .footer h3 {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 12px;
   color: white;
 }
 
 .footer a {
   display: block;
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   padding: 5px 0;
   transition: 0.2s;
