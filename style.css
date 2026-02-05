@@ -56,6 +56,21 @@ h3 {
   padding: 15px 0;
 }
 
+/* Tornar o header fixo em todas as páginas */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+/* Espaçamento para evitar que o header fixe sobreponha o conteúdo
+   apenas em páginas que não usam a classe .index (index já lida separadamente) */
+body:not(.index) main {
+  padding-top: 80px;
+}
+
 .index .header {
   background: transparent;
   border-bottom: none;
