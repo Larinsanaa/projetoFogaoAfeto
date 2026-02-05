@@ -376,6 +376,7 @@ h3 {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: 30px;
+  align-items: center;
 }
 
 .footer-logo {
@@ -406,7 +407,10 @@ h3 {
 
 .footer a:hover {
   color: var(--terracota);
-  text-decoration: underline;
+}
+
+.btn-topo:hover {
+  color: white !important;
 }
 
 .social {
@@ -441,12 +445,15 @@ h3 {
   display: inline-block;
   font-weight: 700;
   transition: 0.2s;
-  width: 100%;
   text-align: center;
+  margin-top: 10px;
+  width: 100%;
 }
 
 .btn-topo:hover {
-  background: #b85a2f;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(196, 106, 59, 0.4);
+  color: white;
 }
 
 @media (max-width: 900px) {
