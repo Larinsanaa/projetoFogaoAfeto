@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Josefin+Slab:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Josefin+Slab:wght@400;600;700&display=swap");
 
 :root {
-  --marrom: #4A2E23;
-  --terracota: #C46A3B;
-  --creme: #F3E7D3;
-  --verde: #4E6B4A;
-  --cinza: #D9D9D9;
-  --texto: #6B6662;
+  --marrom: #4a2e23;
+  --terracota: #c46a3b;
+  --creme: #f3e7d3;
+  --verde: #4e6b4a;
+  --cinza: #d9d9d9;
+  --texto: #6b6662;
 }
 
 * {
@@ -17,7 +17,7 @@
 
 body {
   font-family: "Jura", sans-serif;
-  background: #FAFAF8;
+  background: #fafaf8;
   color: var(--marrom);
 }
 
@@ -40,17 +40,19 @@ img {
   display: block;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--marrom);
   font-family: "Josefin Slab", serif;
 }
 
 .header {
-  background-image: url('img/header.jpg');
+  background-image: url("img/header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-bottom: 1px solid #E8DCC8;
+  border-bottom: 1px solid #e8dcc8;
   padding: 15px 0;
 }
 
@@ -131,7 +133,9 @@ h1, h2, h3 {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('img/header.png');
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("img/header.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,7 +164,7 @@ h1, h2, h3 {
 
 .section {
   padding: 60px 0;
-  background: #FAFAF8;
+  background: #fafaf8;
 }
 
 .section h1 {
@@ -245,7 +249,9 @@ h1, h2, h3 {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .card:hover {
@@ -300,7 +306,7 @@ h1, h2, h3 {
 .info-block {
   margin-bottom: 40px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #E8DCC8;
+  border-bottom: 1px solid #e8dcc8;
 }
 
 .info-block:last-child {
@@ -337,7 +343,7 @@ h1, h2, h3 {
 }
 
 .info-item a:hover {
-  color: #B85A2F;
+  color: #b85a2f;
 }
 
 .mapa {
@@ -347,7 +353,9 @@ h1, h2, h3 {
 }
 
 .footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/footer.jpg');
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/footer.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -431,7 +439,7 @@ h1, h2, h3 {
 }
 
 .btn-topo:hover {
-  background: #B85A2F;
+  background: #b85a2f;
 }
 
 @media (max-width: 900px) {
