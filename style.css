@@ -328,7 +328,7 @@ h3 {
 }
 
 .info-block h2 {
-  font-size: 18px;
+  font-size: 60px;
   margin-bottom: 15px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--terracota);
@@ -346,7 +346,7 @@ h3 {
 
 .info-item p {
   color: var(--texto);
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
