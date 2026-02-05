@@ -153,37 +153,5 @@
         </div>
       </div>
     </footer>
-
-    <button id="scrollToTop" class="scroll-to-top">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="24px"
-        viewBox="0 -960 960 960"
-        width="24px"
-        fill="#e3e3e3"
-      >
-        <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
-      </svg>
-    </button>
-
-    <script>
-      // Scroll to top button functionality
-      const scrollToTopBtn = document.getElementById("scrollToTop");
-
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-          scrollToTopBtn.classList.add("show");
-        } else {
-          scrollToTopBtn.classList.remove("show");
-        }
-      });
-
-      scrollToTopBtn.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
-    </script>
   </body>
 </html>
