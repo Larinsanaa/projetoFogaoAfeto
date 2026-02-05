@@ -173,7 +173,7 @@ body:not(.index) main {
   align-items: center;
   justify-content: center;
   color: white;
-  min-height: 700px;
+  min-height: 800px;
   margin-top: -60px;
   width: 100%;
 }
