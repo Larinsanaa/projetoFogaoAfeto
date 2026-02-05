@@ -182,7 +182,7 @@ h3 {
 }
 
 .section h1 {
-  font-size: 32px;
+  font-size: 60px;
   margin-bottom: 10px;
 }
 
@@ -236,7 +236,7 @@ h3 {
 }
 
 .category {
-  font-size: 20px;
+  font-size: 60px;
   margin: 40px 0 20px;
   padding-bottom: 12px;
   border-bottom: 2px solid var(--terracota);
@@ -284,7 +284,7 @@ h3 {
 }
 
 .card h3 {
-  font-size: 16px;
+  font-size: 20px;
   margin: 15px 0 8px;
   padding: 0 15px;
 }
@@ -294,7 +294,7 @@ h3 {
 }
 
 .card p {
-  font-size: 13px;
+  font-size: 20px;
   color: var(--texto);
   line-height: 1.5;
   padding: 0 15px 15px;
