@@ -58,8 +58,10 @@ h1, h2, h3 {
   background: transparent;
   border-bottom: none;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
 }
 
 .header-content {
@@ -129,10 +131,11 @@ h1, h2, h3 {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/home-hero.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('img/header.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; removed for better mobile behavior */
   padding: 200px 0 150px;
   text-align: center;
   display: flex;
