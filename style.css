@@ -89,16 +89,13 @@ body:not(.index) main {
   width: 100%;
   z-index: 60;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("img/teste.png");
   background-size: cover;
-  background-position: center;
+  background-position: center 114.5%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  transition:
-    background 0.25s ease,
-    box-shadow 0.25s ease,
-    transform 0.2s ease;
 }
 
 .header.fixed .logo,
