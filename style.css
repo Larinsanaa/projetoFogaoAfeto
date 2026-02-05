@@ -297,6 +297,10 @@ h1, h2, h3 {
   border: 2px solid var(--verde);
 }
 
+.menu-2cols .card img {
+  height: 270px;
+}
+
 .info-block {
   margin-bottom: 40px;
   padding-bottom: 30px;
