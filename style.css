@@ -62,12 +62,15 @@ h3 {
   background-repeat: no-repeat;
   border-bottom: 1px solid #e8dcc8;
   padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .index .header {
   background: transparent;
   border-bottom: none;
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -237,7 +240,7 @@ h3 {
 }
 
 .category {
-  font-size: 60px;
+  font-size: 30px;
   margin: 40px 0 20px;
   padding-bottom: 12px;
   border-bottom: 2px solid var(--terracota);
@@ -329,7 +332,7 @@ h3 {
 }
 
 .info-block h2 {
-  font-size: 60px;
+  font-size: 30px;
   margin-bottom: 15px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--terracota);
