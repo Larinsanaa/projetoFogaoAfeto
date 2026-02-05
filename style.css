@@ -171,7 +171,7 @@ h3 {
 
 .section {
   padding: 60px 0;
-  background: #fafaf8;
+  background: #fff6e8;
 }
 
 .section h1 {
@@ -186,7 +186,7 @@ h3 {
 }
 
 .section-white {
-  background: white;
+  background: #fff6e8;
 }
 
 .about {
@@ -368,7 +368,6 @@ h3 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 40px 0;
-  margin-top: 50px;
   color: white;
 }
 
@@ -386,7 +385,7 @@ h3 {
 
 .footer p {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(87, 20, 20, 0.9);
   line-height: 1.5;
   margin-bottom: 10px;
 }
