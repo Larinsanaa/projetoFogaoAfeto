@@ -88,9 +88,7 @@ body:not(.index) main {
   left: 0;
   width: 100%;
   z-index: 60;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("img/teste.png");
+  background: var(--marrom);
   background-size: cover;
   background-position: center 114.5%;
   background-repeat: no-repeat;
