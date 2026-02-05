@@ -21,6 +21,10 @@ body {
   color: var(--marrom);
 }
 
+.light-bg {
+  background: #fff6e8 !important;
+}
+
 .container {
   width: min(1100px, 90%);
   margin: 0 auto;
