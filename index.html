@@ -144,5 +144,35 @@
         </div>
       </div>
     </footer>
+    <script>
+      (function() {
+        const header = document.querySelector('.header');
+        const hero = document.querySelector('.hero');
+        if (!header || !hero) return;
+
+        // calcula o ponto de fixação baseado no fim visível do .hero
+        let stickyPoint = hero.getBoundingClientRect().bottom + window.pageYOffset - header.offsetHeight;
+
+        function recalc() {
+          const rect = hero.getBoundingClientRect();
+          stickyPoint = rect.bottom + window.pageYOffset - header.offsetHeight;
+        }
+
+        function onScroll() {
+          if (window.pageYOffset >= stickyPoint) {
+            header.classList.add('fixed');
+          } else {
+            header.classList.remove('fixed');
+          }
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', function() { recalc(); onScroll(); });
+
+        // inicial
+        recalc();
+        onScroll();
+      })();
+    </script>
   </body>
 </html>

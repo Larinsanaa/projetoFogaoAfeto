@@ -21,14 +21,6 @@ body {
   color: var(--marrom);
 }
 
-.light-bg {
-  background: #fff6e8 !important;
-}
-
-.light-bg .section {
-  background: #fff6e8 !important;
-}
-
 .container {
   width: min(1100px, 90%);
   margin: 0 auto;
@@ -62,19 +54,39 @@ h3 {
   background-repeat: no-repeat;
   border-bottom: 1px solid #e8dcc8;
   padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 20;
 }
 
 .index .header {
   background: transparent;
   border-bottom: none;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 20;
+}
+
+/* Header fixa quando o usuário rolar além do hero */
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 60;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #E8DCC8;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.header.fixed .logo,
+.header.fixed .nav a {
+  color: var(--marrom);
+  text-shadow: none;
+}
+
+.header.fixed .logo img {
+  filter: none;
 }
 
 .header-content {
@@ -186,7 +198,7 @@ h3 {
 }
 
 .section h1 {
-  font-size: 60px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
@@ -240,7 +252,7 @@ h3 {
 }
 
 .category {
-  font-size: 30px;
+  font-size: 20px;
   margin: 40px 0 20px;
   padding-bottom: 12px;
   border-bottom: 2px solid var(--terracota);
@@ -288,7 +300,7 @@ h3 {
 }
 
 .card h3 {
-  font-size: 20px;
+  font-size: 16px;
   margin: 15px 0 8px;
   padding: 0 15px;
 }
@@ -298,7 +310,7 @@ h3 {
 }
 
 .card p {
-  font-size: 20px;
+  font-size: 13px;
   color: var(--texto);
   line-height: 1.5;
   padding: 0 15px 15px;
@@ -332,7 +344,7 @@ h3 {
 }
 
 .info-block h2 {
-  font-size: 30px;
+  font-size: 18px;
   margin-bottom: 15px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--terracota);
@@ -350,7 +362,7 @@ h3 {
 
 .info-item p {
   color: var(--texto);
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -368,7 +380,6 @@ h3 {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  display: block;
 }
 
 .footer {
@@ -380,6 +391,7 @@ h3 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 40px 0;
+  margin-top: 50px;
   color: white;
 }
 
@@ -397,7 +409,7 @@ h3 {
 
 .footer p {
   font-size: 13px;
-  color: rgba(255, 253, 253, 0.9);
+  color: rgba(87, 20, 20, 0.9);
   line-height: 1.5;
   margin-bottom: 10px;
 }
