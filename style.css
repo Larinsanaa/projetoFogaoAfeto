@@ -55,7 +55,6 @@ h3 {
   padding: 15px 0;
 }
 
-/* Tornar o header fixo em todas as páginas */
 .header {
   position: fixed;
   top: 0;
@@ -64,8 +63,6 @@ h3 {
   z-index: 20;
 }
 
-/* Espaçamento para evitar que o header fixe sobreponha o conteúdo
-   apenas em páginas que não usam a classe .index (index já lida separadamente) */
 body:not(.index) main {
   padding-top: 80px;
 }
@@ -80,7 +77,6 @@ body:not(.index) main {
   z-index: 20;
 }
 
-/* Header fixa quando o usuário rolar além do hero */
 .header.fixed {
   position: fixed;
   top: 0;
@@ -184,7 +180,6 @@ body:not(.index) main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; removed for better mobile behavior */
   padding: 200px 0 150px;
   text-align: center;
   display: flex;
